@@ -1,0 +1,46 @@
+---
+Name: dnadesign-advanceder-workflow
+After:
+  - 'symbiote/silverstripe-advancedworkflow'
+---
+
+# Embargo Extension
+SilverStripe\CMS\Model\SiteTree:
+  extensions:
+    - Symbiote\AdvancedWorkflow\Extensions\WorkflowEmbargoExpiryExtension
+
+# Workflow Service Extensions
+Symbiote\AdvancedWorkflow\Services\WorkflowService:
+  extensions:
+    - DNADesign\AdvancederWorkflow\Extensions\WorkflowService_UrgencyExtension
+
+Symbiote\AdvancedWorkflow\DataObjects\WorkflowInstance:
+  extensions:
+    - DNADesign\AdvancederWorkflow\Extensions\WorkflowInstance_UrgencyExtension
+
+Symbiote\AdvancedWorkflow\DataObjects\WorkflowActionInstance:
+  extensions:
+    - DNADesign\AdvancederWorkflow\Extensions\WorkflowActionInstance_UrgencyExtension
+
+# Cancel Workflow Extensions
+Symbiote\AdvancedWorkflow\DataObjects\WorkflowAction:
+  extensions:
+    - DNADesign\AdvancederWorkflow\Extensions\WorkflowAction_CancelExtension
+
+Page:
+  extensions:
+    - DNADesign\AdvancederWorkflow\Extensions\Page_CancelActiveWorkflowExtension
+
+SilverStripe\CMS\Controllers\CMSPageEditController:
+  extensions:
+    - DNADesign\AdvancederWorkflow\Extensions\CMSPage_AdvancedWorkflowCancelExtension
+
+# Admin field overrides for urgency fields
+Symbiote\AdvancedWorkflow\Admin\AdvancedWorkflowAdmin:
+  fieldOverrides:
+    Title: 'Title'
+    LastEdited: 'Changed'
+    WorkflowTitle: 'Effective workflow'
+    WorkflowStatus: 'Current action'
+    IsUrgent: 'Is Urgent'
+    ChangeLevel: 'Change Level'
