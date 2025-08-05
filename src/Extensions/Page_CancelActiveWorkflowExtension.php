@@ -38,7 +38,7 @@ class Page_CancelActiveWorkflowExtension extends DataExtension
             return false;
         }
 
-        if ($this->owner->canEditWorkflow() || !$this->owner->canCancelWorkflow()) {
+        if (!$this->owner->canCancelWorkflow()) {
             return false;
         }
 

@@ -4,11 +4,6 @@ After:
   - 'symbiote/silverstripe-advancedworkflow'
 ---
 
-# Embargo Extension
-SilverStripe\CMS\Model\SiteTree:
-  extensions:
-    - Symbiote\AdvancedWorkflow\Extensions\WorkflowEmbargoExpiryExtension
-
 # Workflow Service Extensions
 Symbiote\AdvancedWorkflow\Services\WorkflowService:
   extensions:

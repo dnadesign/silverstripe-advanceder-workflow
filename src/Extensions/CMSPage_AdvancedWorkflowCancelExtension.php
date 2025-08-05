@@ -71,7 +71,7 @@ class CMSPage_AdvancedWorkflowCancelExtension extends LeftAndMainExtension
                 continue;
             }
             $email->setSubject($subject);
-            $email->setHTMLTemplate('DNADesign\\AdvancederWorkflow\\Email\\CancelEmail');
+            $email->setHTMLTemplate('Email/CancelEmail');
             $email->setData($data);
             $email->send();
         }
