@@ -5,6 +5,9 @@ namespace DNADesign\AdvancederWorkflow\Extensions;
 use SilverStripe\Forms\LiteralField;
 use SilverStripe\Forms\OptionsetField;
 use SilverStripe\ORM\DataExtension;
+use SilverStripe\ORM\DB;
+use SilverStripe\ORM\DataObject;
+use Symbiote\AdvancedWorkflow\DataObjects\WorkflowInstance;
 
 /**
  * Adds urgency field to WorkflowActionInstance
@@ -16,6 +19,8 @@ class WorkflowActionInstance_UrgencyExtension extends DataExtension
         'ChangeLevel' => 'Enum("New page,Minor edit,Major edit,Re-submission","New page")',
     );
 
+
+
     public function onBeforeWrite()
     {
         if (!$this->owner->IsInDB()) {
@@ -23,12 +28,22 @@ class WorkflowActionInstance_UrgencyExtension extends DataExtension
             $this->owner->ChangeLevel = $this->owner->Workflow()->ChangeLevel;
         }
     }
-
     public function onAfterWrite()
     {
-        $this->owner->Workflow()->IsUrgent = $this->owner->IsUrgent;
-        $this->owner->Workflow()->ChangeLevel = $this->owner->ChangeLevel;
-        $this->owner->Workflow()->write();
+        // Direct DB update to avoid ORM hooks/cascading writes interfering with EditForm processing
+        $workflowID  = (int) $this->owner->WorkflowID;
+        if (!$workflowID) {
+            return;
+        }
+        $table = DataObject::getSchema()->tableName(WorkflowInstance::class);
+        DB::prepared_query(
+            sprintf('UPDATE "%s" SET "IsUrgent" = ?, "ChangeLevel" = ? WHERE "ID" = ?', $table),
+            [
+                (string) $this->owner->IsUrgent,
+                (string) $this->owner->ChangeLevel,
+                $workflowID,
+            ]
+        );
     }
 
     public function updateWorkflowFields($fields)
