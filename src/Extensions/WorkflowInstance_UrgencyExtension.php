@@ -4,7 +4,7 @@ namespace DNADesign\AdvancederWorkflow\Extensions;
 
 use SilverStripe\CMS\Model\SiteTree;
 use SilverStripe\Forms\DropdownField;
-use SilverStripe\ORM\DataExtension;
+use SilverStripe\Core\Extension;
 use SilverStripe\ORM\Filters\ExactMatchFilter;
 use SilverStripe\ORM\Search\SearchContext;
 use Symbiote\AdvancedWorkflow\DataObjects\WorkflowDefinition;
@@ -12,7 +12,7 @@ use Symbiote\AdvancedWorkflow\DataObjects\WorkflowDefinition;
 /**
  * Adds urgency field to WorkflowInstance
  */
-class WorkflowInstance_UrgencyExtension extends DataExtension
+class WorkflowInstance_UrgencyExtension extends Extension
 {
     private static $db = array(
         'URL' => 'Varchar(255)',

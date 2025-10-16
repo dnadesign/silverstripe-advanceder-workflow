@@ -4,7 +4,7 @@ namespace DNADesign\AdvancederWorkflow\Extensions;
 
 use SilverStripe\Forms\LiteralField;
 use SilverStripe\Forms\OptionsetField;
-use SilverStripe\ORM\DataExtension;
+use SilverStripe\Core\Extension;
 use SilverStripe\ORM\DB;
 use SilverStripe\ORM\DataObject;
 use Symbiote\AdvancedWorkflow\DataObjects\WorkflowInstance;
@@ -12,7 +12,7 @@ use Symbiote\AdvancedWorkflow\DataObjects\WorkflowInstance;
 /**
  * Adds urgency field to WorkflowActionInstance
  */
-class WorkflowActionInstance_UrgencyExtension extends DataExtension
+class WorkflowActionInstance_UrgencyExtension extends Extension
 {
     private static $db = array(
         'IsUrgent' => 'Enum("No,Yes","No")',

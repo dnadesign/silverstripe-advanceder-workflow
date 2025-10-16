@@ -5,7 +5,7 @@ namespace DNADesign\AdvancederWorkflow\Extensions;
 use SilverStripe\Control\Controller;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\FormAction;
-use SilverStripe\ORM\DataExtension;
+use SilverStripe\Core\Extension;
 use SilverStripe\View\Requirements;
 use Symbiote\AdvancedWorkflow\Extensions\AdvancedWorkflowExtension;
 use Symbiote\AdvancedWorkflow\Extensions\WorkflowApplicable;
@@ -13,7 +13,7 @@ use Symbiote\AdvancedWorkflow\Extensions\WorkflowApplicable;
 /**
  * This extension pushes the "Cancel Workflow" CMS action
  */
-class Page_CancelActiveWorkflowExtension extends DataExtension
+class Page_CancelActiveWorkflowExtension extends Extension
 {
     public function canCancelWorkflow()
     {

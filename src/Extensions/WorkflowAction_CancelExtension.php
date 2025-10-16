@@ -4,10 +4,10 @@ namespace DNADesign\AdvancederWorkflow\Extensions;
 
 use SilverStripe\Forms\CheckboxField;
 use SilverStripe\Forms\FieldList;
-use SilverStripe\ORM\DataExtension;
+use SilverStripe\Core\Extension;
 use SilverStripe\ORM\FieldType\DBBoolean;
 
-class WorkflowAction_CancelExtension extends DataExtension
+class WorkflowAction_CancelExtension extends Extension
 {
     private static $db = array(
         'AllowCancel' => DBBoolean::class,

@@ -18,8 +18,8 @@ This module provides additional functionality for the SilverStripe Advanced Work
 
 ## Requirements
 
-- SilverStripe CMS ^5.0
-- symbiote/silverstripe-advancedworkflow ^6.0
+- SilverStripe CMS ^6.0
+- symbiote/silverstripe-advancedworkflow ^7.0
 
 ## Installation
 
