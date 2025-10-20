@@ -2,15 +2,15 @@
 
 namespace DNADesign\AdvancederWorkflow\Extensions;
 
-use SilverStripe\Admin\LeftAndMainExtension;
-use SilverStripe\Control\Email\Email;
 use SilverStripe\Forms\Form;
-use SilverStripe\Security\Security;
-use Symbiote\AdvancedWorkflow\DataObjects\WorkflowInstance;
-use Symbiote\AdvancedWorkflow\Services\WorkflowService;
+use SilverStripe\Core\Extension;
 use Swift_RfcComplianceException;
+use SilverStripe\Security\Security;
+use SilverStripe\Control\Email\Email;
+use Symbiote\AdvancedWorkflow\Services\WorkflowService;
+use Symbiote\AdvancedWorkflow\DataObjects\WorkflowInstance;
 
-class CMSPage_AdvancedWorkflowCancelExtension extends LeftAndMainExtension
+class CMSPage_AdvancedWorkflowCancelExtension extends Extension
 {
     public function updateWorkflowEditForm(Form $form)
     {
