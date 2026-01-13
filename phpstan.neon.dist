@@ -1,0 +1,11 @@
+includes:
+  - phpstan-baseline.neon
+parameters:
+  level: 7
+  paths:
+    - src
+  reportUnmatchedIgnoredErrors: false
+  treatPhpDocTypesAsCertain: false
+  ignoreErrors:
+    -
+      identifier: missingType.iterableValue

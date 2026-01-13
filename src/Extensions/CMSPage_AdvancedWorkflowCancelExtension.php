@@ -2,15 +2,15 @@
 
 namespace DNADesign\AdvancederWorkflow\Extensions;
 
-use SilverStripe\Admin\LeftAndMainExtension;
 use SilverStripe\Control\Email\Email;
+use SilverStripe\Core\Extension;
 use SilverStripe\Forms\Form;
 use SilverStripe\Security\Security;
 use Symbiote\AdvancedWorkflow\DataObjects\WorkflowInstance;
 use Symbiote\AdvancedWorkflow\Services\WorkflowService;
 use Swift_RfcComplianceException;
 
-class CMSPage_AdvancedWorkflowCancelExtension extends LeftAndMainExtension
+class CMSPage_AdvancedWorkflowCancelExtension extends Extension
 {
     public function updateWorkflowEditForm(Form $form)
     {
@@ -65,7 +65,7 @@ class CMSPage_AdvancedWorkflowCancelExtension extends LeftAndMainExtension
             $email = Email::create();
             try {
                 $email->setTo($member->Email);
-            } catch (Swift_RfcComplianceException $exception) {
+            } catch (Swift_RfcComplianceException) {
                 // If the email address isn't valid we should skip it rather than break
                 // the rest of the processing
                 continue;

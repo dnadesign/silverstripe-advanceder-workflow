@@ -23,18 +23,17 @@
         "symbiote/silverstripe-advancedworkflow": "^7.0",
         "symbiote/silverstripe-queuedjobs": "^6.0"
     },
-    "require-dev": {
-        "phpunit/phpunit": "^9.5",
-        "squizlabs/php_codesniffer": "^3.6"
+     "require-dev": {
+        "cambis/silverstan": "^2.1",
+        "cambis/silverstripe-rector": "^2.1",
+        "phpstan/extension-installer": "^1.4",
+        "phpstan/phpstan": "^2.1",
+        "phpstan/phpstan-deprecation-rules": "^2.0",
+        "rector/rector": "^2.3"
     },
     "autoload": {
         "psr-4": {
             "DNADesign\\AdvancederWorkflow\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "DNADesign\\AdvancederWorkflow\\Tests\\": "tests/"
         }
     },
     "extra": {
@@ -43,5 +42,13 @@
         ]
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "phpstan/extension-installer": true,
+            "silverstripe/vendor-plugin": true
+        } 
+    }
 }

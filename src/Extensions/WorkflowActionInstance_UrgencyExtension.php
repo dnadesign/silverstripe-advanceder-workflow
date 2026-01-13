@@ -14,10 +14,10 @@ use Symbiote\AdvancedWorkflow\DataObjects\WorkflowInstance;
  */
 class WorkflowActionInstance_UrgencyExtension extends Extension
 {
-    private static $db = array(
+    private static $db = [
         'IsUrgent' => 'Enum("No,Yes","No")',
         'ChangeLevel' => 'Enum("New page,Minor edit,Major edit,Re-submission","New page")',
-    );
+    ];
 
 
 

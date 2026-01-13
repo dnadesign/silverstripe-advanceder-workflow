@@ -14,18 +14,18 @@ use Symbiote\AdvancedWorkflow\DataObjects\WorkflowDefinition;
  */
 class WorkflowInstance_UrgencyExtension extends Extension
 {
-    private static $db = array(
+    private static $db = [
         'URL' => 'Varchar(255)',
         'IsUrgent' => 'Enum("No,Yes","No")',
         'ChangeLevel' => 'Enum("New page,Minor edit,Major edit,Re-submission","New page")',
-    );
+    ];
 
-    private static $summary_fields = array(
+    private static $summary_fields = [
         // 'Definition.Object',
         'Initiator.Name',
-    );
+    ];
 
-    private static $searchable_fields = array(
+    private static $searchable_fields = [
         'Title',
         // 'Definition.Object',
         'InitiatorID',
@@ -33,14 +33,14 @@ class WorkflowInstance_UrgencyExtension extends Extension
         'Created',
         'IsUrgent',
         'ChangeLevel',
-    );
+    ];
 
-    public static $change_levels = array(
+    public static $change_levels = [
         'New page' => 'New page',
         'Minor edit' => 'Minor edit (e.g. change to word, sentence, link, image)',
         'Major edit' => 'Major edit (e.g. change to paragraphs, page layout etc)',
         'Re-submission' => 'Re-submission (have fixed changes requested by Admin)',
-    );
+    ];
 
     /**
      * Add in URL so PWT can sort by section
@@ -79,7 +79,7 @@ class WorkflowInstance_UrgencyExtension extends Extension
         $fields->push($levelField);
 
         return new SearchContext(
-            get_class($this->owner),
+            $this->owner::class,
             $fields,
             $filters
         );

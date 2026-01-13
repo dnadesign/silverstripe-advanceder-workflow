@@ -9,9 +9,9 @@ use SilverStripe\ORM\FieldType\DBBoolean;
 
 class WorkflowAction_CancelExtension extends Extension
 {
-    private static $db = array(
+    private static $db = [
         'AllowCancel' => DBBoolean::class,
-    );
+    ];
 
     public function updateCMSFields(FieldList $fields)
     {
