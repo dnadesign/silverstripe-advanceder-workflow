@@ -1,0 +1,271 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Call to an undefined method SilverStripe\\Model\\ModelData\:\:canCancelWorkflow\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Extensions/CMSPage_AdvancedWorkflowCancelExtension.php
+
+		-
+			message: '#^Call to an undefined method SilverStripe\\Model\\ModelData\:\:canEditWorkflow\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Extensions/CMSPage_AdvancedWorkflowCancelExtension.php
+
+		-
+			message: '#^Caught class Swift_RfcComplianceException not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Extensions/CMSPage_AdvancedWorkflowCancelExtension.php
+
+		-
+			message: '#^Class DNADesign\\AdvancederWorkflow\\Extensions\\CMSPage_AdvancedWorkflowCancelExtension extends generic class SilverStripe\\Core\\Extension but does not specify its types\: T$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Extensions/CMSPage_AdvancedWorkflowCancelExtension.php
+
+		-
+			message: '#^Method DNADesign\\AdvancederWorkflow\\Extensions\\CMSPage_AdvancedWorkflowCancelExtension\:\:cancelworkflow\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Extensions/CMSPage_AdvancedWorkflowCancelExtension.php
+
+		-
+			message: '#^Method DNADesign\\AdvancederWorkflow\\Extensions\\CMSPage_AdvancedWorkflowCancelExtension\:\:cancelworkflow\(\) has parameter \$data with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Extensions/CMSPage_AdvancedWorkflowCancelExtension.php
+
+		-
+			message: '#^Method DNADesign\\AdvancederWorkflow\\Extensions\\CMSPage_AdvancedWorkflowCancelExtension\:\:cancelworkflow\(\) has parameter \$request with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Extensions/CMSPage_AdvancedWorkflowCancelExtension.php
+
+		-
+			message: '#^Method DNADesign\\AdvancederWorkflow\\Extensions\\CMSPage_AdvancedWorkflowCancelExtension\:\:sendEmail\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Extensions/CMSPage_AdvancedWorkflowCancelExtension.php
+
+		-
+			message: '#^Method DNADesign\\AdvancederWorkflow\\Extensions\\CMSPage_AdvancedWorkflowCancelExtension\:\:updateWorkflowEditForm\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Extensions/CMSPage_AdvancedWorkflowCancelExtension.php
+
+		-
+			message: '#^Strict comparison using \=\=\= between mixed~\(0\|0\.0\|''''\|''0''\|array\{\}\|false\|null\) and '''' will always evaluate to false\.$#'
+			identifier: identical.alwaysFalse
+			count: 1
+			path: src/Extensions/CMSPage_AdvancedWorkflowCancelExtension.php
+
+		-
+			message: '#^Call to an undefined method SilverStripe\\Forms\\FormField\:\:push\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Extensions/Page_CancelActiveWorkflowExtension.php
+
+		-
+			message: '#^Class DNADesign\\AdvancederWorkflow\\Extensions\\Page_CancelActiveWorkflowExtension extends generic class SilverStripe\\Core\\Extension but does not specify its types\: T$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Extensions/Page_CancelActiveWorkflowExtension.php
+
+		-
+			message: '#^Method DNADesign\\AdvancederWorkflow\\Extensions\\Page_CancelActiveWorkflowExtension\:\:canCancelWorkflow\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Extensions/Page_CancelActiveWorkflowExtension.php
+
+		-
+			message: '#^Method DNADesign\\AdvancederWorkflow\\Extensions\\Page_CancelActiveWorkflowExtension\:\:updateCMSActions\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Extensions/Page_CancelActiveWorkflowExtension.php
+
+		-
+			message: '#^Class DNADesign\\AdvancederWorkflow\\Extensions\\WorkflowActionInstance_UrgencyExtension extends generic class SilverStripe\\Core\\Extension but does not specify its types\: T$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Extensions/WorkflowActionInstance_UrgencyExtension.php
+
+		-
+			message: '#^Method DNADesign\\AdvancederWorkflow\\Extensions\\WorkflowActionInstance_UrgencyExtension\:\:canCancel\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Extensions/WorkflowActionInstance_UrgencyExtension.php
+
+		-
+			message: '#^Method DNADesign\\AdvancederWorkflow\\Extensions\\WorkflowActionInstance_UrgencyExtension\:\:canCancel\(\) has parameter \$member with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Extensions/WorkflowActionInstance_UrgencyExtension.php
+
+		-
+			message: '#^Method DNADesign\\AdvancederWorkflow\\Extensions\\WorkflowActionInstance_UrgencyExtension\:\:onAfterWrite\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Extensions/WorkflowActionInstance_UrgencyExtension.php
+
+		-
+			message: '#^Method DNADesign\\AdvancederWorkflow\\Extensions\\WorkflowActionInstance_UrgencyExtension\:\:onBeforeWrite\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Extensions/WorkflowActionInstance_UrgencyExtension.php
+
+		-
+			message: '#^Method DNADesign\\AdvancederWorkflow\\Extensions\\WorkflowActionInstance_UrgencyExtension\:\:updateWorkflowFields\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Extensions/WorkflowActionInstance_UrgencyExtension.php
+
+		-
+			message: '#^Method DNADesign\\AdvancederWorkflow\\Extensions\\WorkflowActionInstance_UrgencyExtension\:\:updateWorkflowFields\(\) has parameter \$fields with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Extensions/WorkflowActionInstance_UrgencyExtension.php
+
+		-
+			message: '#^Property DNADesign\\AdvancederWorkflow\\Extensions\\WorkflowActionInstance_UrgencyExtension\:\:\$db has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: src/Extensions/WorkflowActionInstance_UrgencyExtension.php
+
+		-
+			message: '#^Use SilverStripe\\Forms\\LiteralField\:\:create\(\) instead of new SilverStripe\\Forms\\LiteralField\(\)\.$#'
+			identifier: silverstan.injectable.useCreate
+			count: 1
+			path: src/Extensions/WorkflowActionInstance_UrgencyExtension.php
+
+		-
+			message: '#^Use SilverStripe\\Forms\\OptionsetField\:\:create\(\) instead of new SilverStripe\\Forms\\OptionsetField\(\)\.$#'
+			identifier: silverstan.injectable.useCreate
+			count: 2
+			path: src/Extensions/WorkflowActionInstance_UrgencyExtension.php
+
+		-
+			message: '#^Class DNADesign\\AdvancederWorkflow\\Extensions\\WorkflowAction_CancelExtension extends generic class SilverStripe\\Core\\Extension but does not specify its types\: T$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Extensions/WorkflowAction_CancelExtension.php
+
+		-
+			message: '#^Method DNADesign\\AdvancederWorkflow\\Extensions\\WorkflowAction_CancelExtension\:\:updateCMSFields\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Extensions/WorkflowAction_CancelExtension.php
+
+		-
+			message: '#^Property DNADesign\\AdvancederWorkflow\\Extensions\\WorkflowAction_CancelExtension\:\:\$db has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: src/Extensions/WorkflowAction_CancelExtension.php
+
+		-
+			message: '#^Use SilverStripe\\Forms\\CheckboxField\:\:create\(\) instead of new SilverStripe\\Forms\\CheckboxField\(\)\.$#'
+			identifier: silverstan.injectable.useCreate
+			count: 1
+			path: src/Extensions/WorkflowAction_CancelExtension.php
+
+		-
+			message: '#^Class DNADesign\\AdvancederWorkflow\\Extensions\\WorkflowInstance_UrgencyExtension extends generic class SilverStripe\\Core\\Extension but does not specify its types\: T$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Extensions/WorkflowInstance_UrgencyExtension.php
+
+		-
+			message: '#^Method DNADesign\\AdvancederWorkflow\\Extensions\\WorkflowInstance_UrgencyExtension\:\:CommentsSoFar\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Extensions/WorkflowInstance_UrgencyExtension.php
+
+		-
+			message: '#^Method DNADesign\\AdvancederWorkflow\\Extensions\\WorkflowInstance_UrgencyExtension\:\:canCancel\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Extensions/WorkflowInstance_UrgencyExtension.php
+
+		-
+			message: '#^Method DNADesign\\AdvancederWorkflow\\Extensions\\WorkflowInstance_UrgencyExtension\:\:getCustomSearchContext\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Extensions/WorkflowInstance_UrgencyExtension.php
+
+		-
+			message: '#^Method DNADesign\\AdvancederWorkflow\\Extensions\\WorkflowInstance_UrgencyExtension\:\:onBeforeWrite\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Extensions/WorkflowInstance_UrgencyExtension.php
+
+		-
+			message: '#^Parameter \#1 \$modelClass of class SilverStripe\\ORM\\Search\\SearchContext constructor expects class\-string\<object\>, class\-string\|false given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Extensions/WorkflowInstance_UrgencyExtension.php
+
+		-
+			message: '#^Property DNADesign\\AdvancederWorkflow\\Extensions\\WorkflowInstance_UrgencyExtension\:\:\$change_levels has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: src/Extensions/WorkflowInstance_UrgencyExtension.php
+
+		-
+			message: '#^Property DNADesign\\AdvancederWorkflow\\Extensions\\WorkflowInstance_UrgencyExtension\:\:\$db has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: src/Extensions/WorkflowInstance_UrgencyExtension.php
+
+		-
+			message: '#^Property DNADesign\\AdvancederWorkflow\\Extensions\\WorkflowInstance_UrgencyExtension\:\:\$searchable_fields has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: src/Extensions/WorkflowInstance_UrgencyExtension.php
+
+		-
+			message: '#^Property DNADesign\\AdvancederWorkflow\\Extensions\\WorkflowInstance_UrgencyExtension\:\:\$summary_fields has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: src/Extensions/WorkflowInstance_UrgencyExtension.php
+
+		-
+			message: '#^Use SilverStripe\\ORM\\Filters\\ExactMatchFilter\:\:create\(\) instead of new SilverStripe\\ORM\\Filters\\ExactMatchFilter\(\)\.$#'
+			identifier: silverstan.injectable.useCreate
+			count: 1
+			path: src/Extensions/WorkflowInstance_UrgencyExtension.php
+
+		-
+			message: '#^Use SilverStripe\\ORM\\Search\\SearchContext\:\:create\(\) instead of new SilverStripe\\ORM\\Search\\SearchContext\(\)\.$#'
+			identifier: silverstan.injectable.useCreate
+			count: 1
+			path: src/Extensions/WorkflowInstance_UrgencyExtension.php
+
+		-
+			message: '#^Class DNADesign\\AdvancederWorkflow\\Extensions\\WorkflowService_UrgencyExtension extends generic class SilverStripe\\Core\\Extension but does not specify its types\: T$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Extensions/WorkflowService_UrgencyExtension.php
+
+		-
+			message: '#^Method DNADesign\\AdvancederWorkflow\\Extensions\\WorkflowService_UrgencyExtension\:\:updateUserPendingItems\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Extensions/WorkflowService_UrgencyExtension.php
+
+		-
+			message: '#^Method DNADesign\\AdvancederWorkflow\\Extensions\\WorkflowService_UrgencyExtension\:\:updateUserPendingItems\(\) has parameter \$instances with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Extensions/WorkflowService_UrgencyExtension.php
+
+		-
+			message: '#^Method DNADesign\\AdvancederWorkflow\\Extensions\\WorkflowService_UrgencyExtension\:\:updateUserSubmittedItems\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: src/Extensions/WorkflowService_UrgencyExtension.php
+
+		-
+			message: '#^Method DNADesign\\AdvancederWorkflow\\Extensions\\WorkflowService_UrgencyExtension\:\:updateUserSubmittedItems\(\) has parameter \$instances with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: src/Extensions/WorkflowService_UrgencyExtension.php

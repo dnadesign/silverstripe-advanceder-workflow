@@ -1,0 +1,10 @@
+# IDE
+.editorconfig export-ignore
+
+# Git
+.gitattributes export-ignore
+.gitignore export-ignore
+
+# Coding standards
+phpstan.neon.dist export-ignore
+rector.php export-ignore
